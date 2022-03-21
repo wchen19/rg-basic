@@ -1,0 +1,127 @@
+body {
+  font-family: Helvetica, sans-serif;
+  margin: 0;
+}
+
+nav {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 10% 30% 45% 15%;
+  background-color: #ff8888;
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  list-style: none;
+}
+nav ul li {
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+nav button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px;
+  font-size: 16px;
+}
+
+#jumbotron img {
+  max-height: 100vh;
+  min-height: 100vh;
+  min-width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#jumbotron div {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  margin: 15px;
+  grid-row: 1/2;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 30px;
+  padding: 20px;
+}
+#products .card {
+  width: 80%;
+  border: 1px solid rgba(114, 114, 114, 0.3);
+  border-radius: 5px;
+  justify-self: center;
+}
+#products .card img {
+  max-height: 60%;
+  min-height: 60%;
+  min-width: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+#products .card .section {
+  padding: 10px;
+  display: grid;
+  grid-template-rows: auto auto 30%;
+}
+#products .card .section h3 {
+  text-align: center;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 15px;
+}
+#about img {
+  max-width: 100%;
+}
+
+#contact {
+  width: 30%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  background-color: #ff8888;
+  padding: 10px;
+}
+footer section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+footer section ul {
+  list-style: none;
+}
+footer section ul li {
+  padding: 10px;
+}
+footer section ul a {
+  text-decoration: none;
+  color: black;
+}
+footer p {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

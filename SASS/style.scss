@@ -1,0 +1,138 @@
+body {
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+}
+
+nav {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 10% 30% 45% 15%;
+    background-color: rgb(255, 136, 136);
+    text-align: center;
+    position: sticky;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    ul {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        list-style: none;
+
+        li {
+            border-right: 1px solid rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    button {
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 10px;
+        font-size: 16px;
+    }
+}
+
+#jumbotron {
+    img {
+        max-height: 100vh;
+        min-height: 100vh;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    div {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        bottom: 0;
+    }
+}
+
+h2 {
+        text-align: center;
+        margin: 15px;
+        grid-row: 1 / 2;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 30px;
+    padding: 20px;
+
+    .card {
+        width: 80%;
+        border: 1px solid rgba(114, 114, 114, 0.3);
+        border-radius: 5px;
+        justify-self: center;
+
+        img {
+            max-height: 60%;
+            min-height: 60%;
+            min-width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .section {
+            padding: 10px;
+            display: grid;
+            grid-template-rows: auto auto 30%;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+#about {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 15px;
+    img {
+        max-width: 100%;
+    }
+}
+
+#contact {
+    width: 30%;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(255, 136, 136);
+    padding: 10px;
+    
+    section {
+        display: grid;
+        grid-template-columns: auto auto auto;
+
+        ul {
+            list-style: none;
+
+            li {
+                padding: 10px;
+            }
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    
+    p {
+        text-align: center;
+    }
+}
